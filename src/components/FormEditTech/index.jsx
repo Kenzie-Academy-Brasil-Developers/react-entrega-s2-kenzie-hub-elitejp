@@ -31,7 +31,12 @@ function FormEditTech({ editTech, setEditTech, loadTechs }) {
           )}`,
         },
       })
-      .then((response) => loadTechs())
+      .then((response) => {
+        loadTechs();
+        setEditTech({
+          open: false,
+        });
+      })
       .catch((err) => console.error(err));
   };
 
@@ -46,7 +51,9 @@ function FormEditTech({ editTech, setEditTech, loadTechs }) {
       })
       .then(() => {
         loadTechs();
-        setEditTech(false);
+        setEditTech({
+          open: false,
+        });
       })
       .catch((err) => console.error(err));
   };

@@ -3,7 +3,9 @@ import styled from "styled-components";
 export const StyledLogin = styled.form`
   display: flex;
   flex-direction: column;
-  margin: 12px;
+  width: 95%;
+  max-width: 370px;
+  margin: 12px auto;
   padding: 16px;
   background-color: var(--grey3);
   gap: 20px;

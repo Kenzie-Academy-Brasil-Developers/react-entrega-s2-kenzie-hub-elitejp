@@ -5,7 +5,7 @@ export const StyledHeader = styled.div`
   display: flex;
   width: 95%;
   max-width: 370px;
-  justify-content: space-between;
+  justify-content: space-around;
 
   h1 {
     color: var(--primary_focus);

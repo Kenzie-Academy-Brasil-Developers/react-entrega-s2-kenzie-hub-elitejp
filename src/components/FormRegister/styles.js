@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledRegister = styled.form`
   display: flex;
   flex-direction: column;
+  width: 95%;
   max-width: 370px;
   margin: 12px auto;
   padding: 16px;

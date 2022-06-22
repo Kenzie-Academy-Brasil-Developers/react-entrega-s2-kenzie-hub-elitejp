@@ -40,4 +40,16 @@ export const StyledDashboard = styled.div`
       border-radius: 4px;
     }
   }
+
+  .mobile-tip {
+    margin: 0 2.5%;
+    color: var(--grey1);
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 900px) {
+    .mobile-tip {
+      display: none;
+    }
+  }
 `;

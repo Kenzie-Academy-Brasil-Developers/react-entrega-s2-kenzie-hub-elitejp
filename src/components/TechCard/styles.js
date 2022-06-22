@@ -8,6 +8,11 @@ export const StyledTechCard = styled.li`
   background-color: var(--grey4);
   border-radius: 4px;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--grey2);
+  }
 
   h2 {
     font-size: 14px;

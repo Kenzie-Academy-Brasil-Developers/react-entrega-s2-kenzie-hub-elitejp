@@ -76,6 +76,7 @@ function Dashboard({ authenticated }) {
           <h3>Tecnologias</h3>
           <button onClick={() => setCreateTech(true)}>+</button>
         </div>
+        <span className="mobile-tip"> Click na tecnologia para editar</span>
       </StyledDashboard>
 
       <TechsList

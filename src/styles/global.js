@@ -19,6 +19,7 @@ export default createGlobalStyle`
   --grey2: #343B41;
   --grey1: #868E96;
   --grey0: #F8F9FA;
+  --toastify-toast-background: #343B41;
 }
 
 body {

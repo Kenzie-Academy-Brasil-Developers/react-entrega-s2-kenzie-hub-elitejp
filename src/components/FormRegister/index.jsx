@@ -5,6 +5,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { StyledRegister } from "./styles";
 import { useHistory } from "react-router-dom";
 
+import { toast } from "react-toastify";
+
 import api from "../../Data";
 
 function FormRegister({ setRegisterSucess }) {
@@ -53,11 +55,11 @@ function FormRegister({ setRegisterSucess }) {
     api
       .post("/users", user)
       .then((response) => {
-        setRegisterSucess(response.status);
-        setTimeout(() => history.push(`/`), 5000);
+        toast.success("Conta criada com sucesso!");
+        history.push(`/`);
       })
       .catch((error) => {
-        setRegisterSucess(400);
+        toast.error("Ops! Algo deu errado");
       });
   };
 
